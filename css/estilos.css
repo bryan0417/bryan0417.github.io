@@ -1,0 +1,123 @@
+table {
+    margin: 0 auto;
+}
+
+th {
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+header {
+    background: #083994;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caflisch Script', script;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+.imagen {
+    width: 300px;
+    height: 350px;
+}
+
+div {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background: #083994;
+    z-index: 1100;
+    max-width: 1100px;
+    width: 95%;
+    margin: 20px auto;
+    font-family: 'arial', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    flex: 1;
+    position: relative;
+}
+
+nav ul li:hover {
+    background: #083994;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li a span {
+    margin-right: 10px;
+}
+
+nav ul li:hover .children {
+    display: block;
+}
+
+nav ul li .children {
+    display: none;
+    background: #083994;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+nav ul li .children li a {
+    display: block;
+}
+
+nav ul li .children li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+iframe {
+    width: 400px;
+    height: 300px;
+}
